@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #22254b;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 200px;
+    background-color: #373b69;
+    margin: 2rem;
+    color: #eee;
+    font-size: 1em;
+    border-radius: 5px;
+    box-sizing: 0 4px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info p {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    white-space: wrap;
+    word-wrap: break-word;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info span {
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: #373b69;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header input.search {
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #22254b;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+header input.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #22254b;
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #373b69;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    padding: 10px;
+    text-overflow: ellipsis;
+    height: 80%;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+    overflow: auto;
+}
+
+.pagination ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    list-style-type: none;
+    background-color: #373b69;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.25em;
+    user-select: none;
+    cursor: pointer;
+}

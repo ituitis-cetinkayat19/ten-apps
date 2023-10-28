@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("new-year.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: -10rem;
+}
+
+.countdown-container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    transition: all 0.3s;
+}
+
+.countdown-el {
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.3);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+canvas {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-90deg);
+}
+
+.big-text.changed {
+    color: red;
+    font-size: 7rem;
+}

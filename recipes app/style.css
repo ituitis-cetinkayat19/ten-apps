@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ece9e6;
+    background-color: -webkit-linear-gradient(
+        to right,
+        #ffffff,
+        #ece9e6
+    );
+    background: linear-gradient(
+        to right,
+        #ffffff,
+        #ece9e6
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fav-container {
+    padding: 0.25rem 1rem;
+    text-align: center;
+    background-color: rgb(233, 199, 255);
+}
+
+.fav-meals {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+.fav-meals li {
+    min-width: 85px;
+    user-select: none;
+}
+
+.fav-meals li img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px 2x #3333331a;
+    cursor: pointer;
+}
+
+.fav-meals li div {
+    font-size: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.meal {
+    border-radius: 3px;
+    margin: 1.5rem;
+    box-shadow: 0 0 10px 2px #3333331a;
+    overflow: hidden;
+}
+
+.meal-header {
+    position: relative;
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 1rem;
+    background-color: white;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal-body h4 {
+    margin: 0;
+}
+
+.meal-body .fav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+.meal-header img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.meal-info {
+    font-size: 0.8em;
+}

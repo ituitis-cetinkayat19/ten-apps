@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, 
+        initial-scale=1.0">
+        <title>Drawing App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/de7dda99e4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="tools">
+            <div class="draw-type" data-type="pencil"><i class="fa-solid fa-pencil"></i></div>
+            <div class="draw-type" data-type="line"><i class="fa-solid fa-minus"></i></div>
+            <div class="draw-type" data-type="eraser"><i class="fa-solid fa-eraser"></i></div>
+            <div class="draw-type" data-type="rectangle"><i class="fa-regular fa-square"></i></div>
+            <div class="draw-type" data-type="rectangleFill"><i class="fa-solid fa-square"></i></div>
+            <div class="draw-type" data-type="circle"><i class="fa-regular fa-circle"></i></div>
+            <div class="draw-type" data-type="circleFill"><i class="fa-solid fa-circle"></i></div>
+            <div><input class="color" type="color"></div>
+            <div class="width-div"><input class="width" type="range" min="2" max="100" value="10"></div>
+        </div>
+        <div class="canvas-container">
+            <canvas class="preview"></canvas>
+            <canvas class="real"></canvas>
+        </div>
+    </body>
+</html>

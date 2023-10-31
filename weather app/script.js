@@ -1,7 +1,8 @@
 const main = document.querySelector("#main");
 const form = document.querySelector("#form");
 const search = document.querySelectorAll(".search");
-const apikey = "212955ee0c778c90082dff545bd8c5a9";
+import { apikey } from "./apikey.js";
+
 const url = (lat, lon) => 
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}`;
 
@@ -10,7 +11,6 @@ function KtoC(K) {
 }    
 
 function addWeatherToPage(data) {
-    console.log(data);
     const temp = KtoC(data.main.temp);
     main.innerHTML = "";
     const weather = document.createElement("div");
